@@ -1,0 +1,5 @@
+#! /bin/bash
+set -e
+rm -f /etc/nginx/sites-enabled/easy-check-web
+nginx -t
+systemctl reload nginx
